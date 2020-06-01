@@ -1,19 +1,19 @@
 import React from 'react';
 import './App.css';
-import { useI18n, useI18nQualified } from "i18next-react";
+import { useI18n, useI18nLoaded } from "i18next-react";
 
 function App() {
   const i18n = useI18n();
-  const i18nEn = useI18nQualified('en', 'translation')
-  const i18nJa = useI18nQualified('ja', 'translation')
-  const i18nZhS = useI18nQualified('zh-Hans', 'translation')
-  const i18nZhT = useI18nQualified('zh-Hant', 'translation')
+  const i18nEn = useI18nLoaded('en', 'translation')
+  const i18nJa = useI18nLoaded('ja', 'translation')
+  const i18nZhS = useI18nLoaded('zh-Hans', 'translation')
+  const i18nZhT = useI18nLoaded('zh-Hant', 'translation')
 
   return (
     <div className="App">
       <header className="App-header">
         <p>
-          Demo of <a href="">i18next-react</a>
+          Demo of <a href="https://github.com/jokester/i18next-react">i18next-react</a>
         </p>
         <div>
           current language: {i18n.language} / {i18n.t('common.hello')}

@@ -92,7 +92,7 @@ export function useI18n(): i18n {
  * @param {string} ns
  * @returns {i18n | null}
  */
-export function useI18nQualified(lng?: string, ns?: string): TFunction | null {
+export function useI18nLoaded(lng?: string, ns?: string): TFunction | null {
   const i18n = useI18n();
   const [resLoad, setResLoadCount] = useState(0);
 
