@@ -1,0 +1,32 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "declaration": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "coverage",
+    "__test__",
+    "bin",
+    "jest.config.js",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "examples",
+    "src/setupTests.ts"
+  ]
+}
