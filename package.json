@@ -20,6 +20,10 @@
     "i18next": "*",
     "react": ">=16.7"
   },
+  "files": [
+    "dist/**/*",
+    "package.json"
+  ],
   "devDependencies": {
     "@types/jest": "^25",
     "@types/node": "^12",
