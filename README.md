@@ -3,8 +3,6 @@ i18next-react
 
 A tiny (~130LOC) React binding for [i18next](https://github.com/i18next/i18next).
 
-UNDER CONSTRUCTION
-
 ## Features
 
 - Simple
