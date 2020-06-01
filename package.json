@@ -1,0 +1,39 @@
+{
+  "name": "browser-react",
+  "version": "0.1.0",
+  "author": "Wang Guan <momocraft@gmail.com>",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf dist && tsc --project tsconfig.json",
+    "analyze": "react-scripts build && source-map-explorer 'build/static/js/*.js'",
+    "test": "CI=true react-scripts test",
+    "test:watch": "react-scripts test --watch",
+    "test:coverage": "CI=true react-scripts test --env=jsdom --coverage --watchAll=false --coverageReporters=json --coverageReporters=lcov --coverageReporters=text --coverageReporters=html",
+    "typecheck": "tsc --noEmit",
+    "typecheck:watch": "tsc --watch --noEmit",
+    "lint": "    eslint 'src/**/*.@(ts|js|tsx|jsx)'",
+    "lint:fix": "eslint 'src/**/*.@(ts|js|tsx|jsx)' --fix"
+  },
+  "peerDependencies": {
+    "i18next": "*",
+    "react": ">=16.7"
+  },
+  "devDependencies": {
+    "@types/jest": "^25",
+    "@types/node": "^12",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^2.32.0",
+    "@typescript-eslint/parser": "^2.32.0",
+    "eslint": "7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "i18next": "^19.4.5",
+    "jest": "^25",
+    "prettier": "^2.0.5",
+    "ts-jest": "^25",
+    "typescript": "^3.8"
+  }
+}

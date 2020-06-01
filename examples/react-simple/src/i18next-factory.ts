@@ -2,7 +2,7 @@ import i18next, { i18n } from 'i18next';
 import HttpBackend from 'i18next-http-backend';
 import localeEn from './locales/en.json'
 
-import { I18NFactory } from "./i18next-react";
+import { I18NFactory } from "i18next-react";
 
 let configuredInstance: i18n = null!;
 

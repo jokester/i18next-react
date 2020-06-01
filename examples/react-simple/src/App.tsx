@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { useI18n, useI18nQualified } from "./i18next-react";
+import { useI18n, useI18nQualified } from "i18next-react";
 
 function App() {
   const i18n = useI18n();
