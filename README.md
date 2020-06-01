@@ -3,8 +3,6 @@ i18next-react
 
 A tiny (~130LOC) React binding for [i18next](https://github.com/i18next/i18next).
 
-UNDER CONSTRUCTION
-
 ## Features
 
 - Simple
@@ -26,8 +24,8 @@ Before rolling yet another binding, I tried these libraries:
 ## Getting started
 
 1. Install: `npm install --save i18next-react` or `yarn add i18next-react`
-2. Define a factory function to provide initialized `i18next` instance. [example]()
-3. Wrap top level component with ` <I18NextReactProvider lang={initialLang} factory={i18NextFactory}>`
+2. Define a factory function to provide initialized `i18next` instance
+3. Wrap top level component (or, a component where you want to use i18next within) with `<I18NextReactProvider lang={initialLang} factory={i18NextFactory}>`
 4. Consume `i18next` API with`useI18n()` or `useI18nLoaded(lang, namespace)` hooks
 
 ## Examples
@@ -38,9 +36,13 @@ Before rolling yet another binding, I tried these libraries:
 - bundles in en locale
 - load zhHans / zhHant / ja locales on demand, with [i18next/i18next-http-backend](https://github.com/i18next/i18next-http-backend)
 
+[nextjs-ssr](#)
+
+- TODO
+
 ## Feedback / Issues / Contributions
 
-Feel free to fill an issue in github repo.
+If you find anything interesting, feel free to [fill an issue](https://github.com/jokester/i18next-react/issues/new).
 
 Also, I haven't tested but this should be compatible with preact / react-native too. Like to hear if this library works (or doesn't) with them.
 
