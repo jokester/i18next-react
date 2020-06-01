@@ -1,0 +1,1 @@
+../../../src/i18next-react.ts
