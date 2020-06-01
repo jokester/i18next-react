@@ -1,8 +1,9 @@
 {
-  "name": "browser-react",
+  "name": "i18next-react",
   "version": "0.1.0",
   "author": "Wang Guan <momocraft@gmail.com>",
-  "private": true,
+  "description": "A tiny React binding for i18next",
+  "license": "MIT",
   "scripts": {
     "build": "rm -rf dist && tsc --project tsconfig.json",
     "analyze": "react-scripts build && source-map-explorer 'build/static/js/*.js'",
