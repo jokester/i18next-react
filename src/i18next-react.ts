@@ -6,15 +6,15 @@
  */
 import {
   createContext,
+  createElement,
+  FunctionComponent,
   useContext,
   useEffect,
-  useState,
-  FunctionComponent,
-  createElement,
-  useRef,
   useMemo,
+  useRef,
+  useState,
 } from 'react';
-import { i18n } from 'i18next';
+import { i18n, TFunction } from 'i18next';
 
 const I18NextReactContext = createContext<InternalI18nState>(null!);
 
@@ -92,7 +92,7 @@ export function useI18n(): i18n {
  * @param {string} ns
  * @returns {i18n | null}
  */
-export function useI18nQualified(lng: string, ns: string): i18n | null {
+export function useI18nQualified(lng?: string, ns?: string): TFunction | null {
   const i18n = useI18n();
   const [resLoad, setResLoadCount] = useState(0);
 
@@ -113,9 +113,7 @@ export function useI18nQualified(lng: string, ns: string): i18n | null {
     };
   }, [i18n]);
 
-  const bundleAvailable = useMemo(() => i18n.hasResourceBundle(lng, ns), [i18n, lng, ns, resLoad]);
-
-  return bundleAvailable ? i18n : null;
+  return useMemo(() => i18n.hasResourceBundle(lng || '', ns || '') ? i18n.getFixedT(lng!, ns) : null, [i18n, lng, ns, resLoad]);
 }
 
 export function useMounted() {
