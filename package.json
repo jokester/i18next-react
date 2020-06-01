@@ -1,6 +1,6 @@
 {
   "name": "i18next-react",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Wang Guan <momocraft@gmail.com>",
   "description": "A tiny React binding for i18next",
   "keywords": ["react", "i18n", "i18next", "next.js"],
