@@ -1,3 +1,7 @@
+a:visited, a:not(:visited) {
+  color: greenyellow;
+}
+
 .App {
   text-align: center;
 }
