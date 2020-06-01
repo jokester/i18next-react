@@ -5153,9 +5153,10 @@ i18next-http-backend@^1.0.13:
   dependencies:
     node-fetch "2.6.0"
 
-"i18next-react@link:../../dist":
-  version "0.0.0"
-  uid ""
+i18next-react@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/i18next-react/-/i18next-react-0.2.2.tgz#07f1417ea2c08de3203b62ad8d29283fa720df90"
+  integrity sha512-SptXIs0hVIFPis2s0797HbBJpze6ST2I02Wm3uSyMdSg5XPHW14eJVshdCfbGzgIDPKF7nrl6htbkDjYEd+HIA==
 
 i18next@^19.4.5:
   version "19.4.5"
