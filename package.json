@@ -8,7 +8,7 @@
   "bugs": "https://github.com/jokester/i18next-react/issues",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && tsc --project tsconfig.json",
+    "build": "rm -rf dist && tsc --project tsconfig.json && tsc --project tsconfig.cjs.json",
     "test": "CI=true react-scripts test",
     "test:watch": "react-scripts test --watch",
     "test:coverage": "CI=true react-scripts test --env=jsdom --coverage --watchAll=false --coverageReporters=json --coverageReporters=lcov --coverageReporters=text --coverageReporters=html",
@@ -26,7 +26,7 @@
     "dist/**/*",
     "package.json"
   ],
-  "main": "./dist/index.js",
+  "main": "./dist/cjs/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "devDependencies": {
