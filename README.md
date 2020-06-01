@@ -3,6 +3,10 @@ i18next-react
 
 A simpler (~150LOC) React binding for [i18next](https://github.com/i18next/i18next).
 
+UNDER CONSTRUCTION
+
+<!--
+
 ## Features
 
 - Simple
@@ -31,6 +35,7 @@ Feel free to create a issue in github repo.
 
 Also, I haven't tested but this should work with preact / react-native too. If it works or doesn't work, I'm glad to hear.
 
+-->
 ## License
 
 MIT
