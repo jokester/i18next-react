@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "author": "Wang Guan <momocraft@gmail.com>",
   "description": "A tiny React binding for i18next",
+  "repository": "https://github.com/jokester/i18next-react",
+  "bugs": "https://github.com/jokester/i18next-react/issues",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf dist && tsc --project tsconfig.json",
-    "analyze": "react-scripts build && source-map-explorer 'build/static/js/*.js'",
     "test": "CI=true react-scripts test",
     "test:watch": "react-scripts test --watch",
     "test:coverage": "CI=true react-scripts test --env=jsdom --coverage --watchAll=false --coverageReporters=json --coverageReporters=lcov --coverageReporters=text --coverageReporters=html",
