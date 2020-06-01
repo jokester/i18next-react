@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "author": "Wang Guan <momocraft@gmail.com>",
   "description": "A tiny React binding for i18next",
+  "keywords": ["react", "i18n", "i18next", "next.js"],
   "repository": "https://github.com/jokester/i18next-react",
   "bugs": "https://github.com/jokester/i18next-react/issues",
   "license": "MIT",
