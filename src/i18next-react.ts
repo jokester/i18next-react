@@ -15,7 +15,6 @@ import {
   useMemo,
 } from 'react';
 import { i18n } from 'i18next';
-import type { EventEmitter } from 'stream';
 
 const I18NextReactContext = createContext<InternalI18nState>(null!);
 
@@ -35,7 +34,7 @@ interface InternalI18nState {
   _onLanguageChanged(lng: string): void;
 }
 
-interface I18NFactory {
+export interface I18NFactory {
   /**
    * @param {boolean} inServer
    * @param {string} initialLang
@@ -109,8 +108,8 @@ export function useI18nQualified(lng: string, ns: string): i18n | null {
       /**
        * FIXME: remove type cast when my PR lands
        */
-      ((i18n.store as unknown) as EventEmitter).off('added', triggerResourceCheck);
-      ((i18n.store as unknown) as EventEmitter).off('removed', triggerResourceCheck);
+      (i18n.store as any).off('added', triggerResourceCheck);
+      (i18n.store as any).off('removed', triggerResourceCheck);
     };
   }, [i18n]);
 

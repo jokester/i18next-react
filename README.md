@@ -14,7 +14,7 @@ UNDER CONSTRUCTION
 
 - Framework / configuration agnostic
     - opinionless about other parts of system, including how to load i18n resources / how to infer and persist locales
-    - easier to integrate into an existing app
+    - easier to integrate into an existing app, or opt out
 
 ## Comparison with alternatives
 
