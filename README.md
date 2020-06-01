@@ -3,6 +3,8 @@ i18next-react
 
 A tiny (~130LOC) React binding for [i18next](https://github.com/i18next/i18next).
 
+[![npm version](https://badge.fury.io/js/i18next-react.svg)](https://badge.fury.io/js/i18next-react)
+
 ## Features
 
 - Simple
