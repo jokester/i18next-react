@@ -1,6 +1,6 @@
 {
   "name": "i18next-react",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "author": "Wang Guan <momocraft@gmail.com>",
   "description": "A tiny React binding for i18next",
   "keywords": ["react", "i18n", "i18next", "next.js"],
@@ -8,7 +8,7 @@
   "bugs": "https://github.com/jokester/i18next-react/issues",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && tsc --project tsconfig.json",
+    "build": "rm -rf dist && tsc --project tsconfig.json && tsc --project tsconfig.cjs.json",
     "test": "CI=true react-scripts test",
     "test:watch": "react-scripts test --watch",
     "test:coverage": "CI=true react-scripts test --env=jsdom --coverage --watchAll=false --coverageReporters=json --coverageReporters=lcov --coverageReporters=text --coverageReporters=html",
@@ -26,6 +26,9 @@
     "dist/**/*",
     "package.json"
   ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "devDependencies": {
     "@types/jest": "^25",
     "@types/node": "^12",
