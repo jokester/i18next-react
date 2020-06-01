@@ -1,6 +1,6 @@
 {
   "name": "i18next-react",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Wang Guan <momocraft@gmail.com>",
   "description": "A tiny React binding for i18next",
   "keywords": ["react", "i18n", "i18next", "next.js"],
@@ -26,6 +26,9 @@
     "dist/**/*",
     "package.json"
   ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "devDependencies": {
     "@types/jest": "^25",
     "@types/node": "^12",
