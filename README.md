@@ -1,7 +1,7 @@
 i18next-react
 -------
 
-A tiny (~130LOC) React binding for [i18next](https://github.com/i18next/i18next).
+A minimal (~130LOC) React binding for [i18next](https://github.com/i18next/i18next).
 
 [![npm version](https://badge.fury.io/js/i18next-react.svg)](https://badge.fury.io/js/i18next-react)
 
@@ -32,15 +32,16 @@ Before rolling yet another binding, I tried these libraries:
 
 ## Examples
 
-[react-simple](examples/react-simple):
+[react-simple](https://github.com/jokester/i18next-react/tree/master/examples/react-simple):
 
 - based on CRA react app
 - bundles in en locale
 - load zhHans / zhHant / ja locales on demand, with [i18next/i18next-http-backend](https://github.com/i18next/i18next-http-backend)
 
-[nextjs-ssr](#)
+[nextjs-ssr](https://github.com/jokester/i18next-react/tree/master/examples/nextjs-ssr)
 
-- TODO
+- bundles all locales
+- handle language preference in cookie with `getInitialProps` / `getServerSideProps`
 
 ## Feedback / Issues / Contributions
 
