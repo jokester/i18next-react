@@ -14,6 +14,11 @@ A minimal (~130LOC) React binding for [i18next](https://github.com/i18next/i18ne
     - opinionless about other parts of system, including how to load i18n resources / how to infer and persist locales
     - easier to integrate into an existing app, or opt out
 
+## Non-features (or, limitations)
+
+- Rich API as in react-i18next / next-i18next
+- All locale resources need to be loaded before rendering (in both server and browser), this increases bundle size
+
 ## Comparison with alternatives
 
 This library is initially made when trying to use `i18next` in a Next.js serverless app.
@@ -38,7 +43,7 @@ Before rolling yet another binding, I tried these libraries:
 - bundles in en locale
 - load zhHans / zhHant / ja locales on demand, with [i18next/i18next-http-backend](https://github.com/i18next/i18next-http-backend)
 
-[nextjs-ssr](https://github.com/jokester/i18next-react/tree/master/examples/nextjs-ssr)
+[nextjs-serverless](https://github.com/jokester/i18next-react/tree/master/examples/nextjs-serverless)
 
 - bundles all locales
 - handle language preference in cookie with `getInitialProps` / `getServerSideProps`
