@@ -26,7 +26,7 @@ This library is initially made when trying to use `i18next` in a Next.js serverl
 Before rolling yet another binding, I tried these libraries:
 
 - [isaachinman/next-i18next](https://github.com/isaachinman/next-i18next) has impressively rich features. But it requires some certain app structure, a custom server, and a few middlewares, all of which I had difficulties to comply with.
-- [i18next/react-i18next](https://github.com/i18next/react-i18next) was not very simple to use in Next.js SSR.
+- [i18next/react-i18next](https://github.com/i18next/react-i18next) was not very simple to use in Next.js SSR (I may be wrong).
 
 ## Getting started
 
